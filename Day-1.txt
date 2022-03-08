@@ -1,0 +1,395 @@
+what is java?
+java is programming Lanaguage
+object-oriented PL
+OO?
+Objects-real time entity(state and behaviour)
+---------------------------------------------------
+Platform-s/w-platform(set of instructions to perform a task)
+H/W-platform(physical components of a system)
+
+what kind of platform?
+Software platform
+
+Android
+ios
+java
+
+
+Java runtime environment(JRE)
+-------------------------------------------------------------
+Secure Programming language
+-----------------------------------------------------------------
+
+Where we can use Java?
+
+To develop the softwares
+
+1.web applications(Enterprise applications)(Advanced java)
+2.Mobile applications
+3.desktop applications(core java,collections,Awt,structs,applets)
+
+
+editions
+
+1.J2SE
+2.J2EE
+3.J2ME
+---------------------------------------------------------------------
+when java?
+1995
+james gosling
+
+oak-java
+copyright issues
+
+sun microsystems
+
+oracle
+
+
+-----------------------------------------------------------------------
+How we can work with the java?
+
+
+JDK(Java Development Kit)
+JRE(Java runtime environment)
+JVM(Java virtual Machine)
+
+
+features
+-------------------------------------------------------
+//Structur of java program
+
+class Hello
+{
+    public static void main(String args[])
+    {
+        System.out.println("Hello bitLabs");
+    }
+}
+
+---------------------------------------------------------------------------------------------------------
+Datatypes:
+type of data
+numbers
+alphabets
+special characters
+
+numbers
+
+integers
+fraction numbers
+
+alphabets
+
+
+
+phonenumber:number -byte,short,int,long
+
+percentage:decimal4.6-float,double
+
+name:word-String(collection of characters)
+
+section:char
+
+Boolean
+
+Primitive datatypes
+byte     -1byte---0
+short  -2 bytes--0
+int--4 bytes----0
+long--8 bytes---0L
+float--4 bytes--0.0f
+double--8 bytes--0.0d
+char--2 bytes---\u0000
+boolean-1 bit---false
+
+Non-Primitive
+
+String
+Arrays
+class
+
+--------------------------------------------------------------------------------------------------------------------------
+Variables
+name of memory location in which we can store data
+
+datatype variable_name;
+
+rules to declare the variables
+
+
+1.albhabets , numbers and underscore
+2.should start with alphabet or underscore
+3.should not give white spaces
+4.should not use keywords as a variable names
+
+valid :
+Price
+_perc
+marks1
+
+simple_interest
+pipi
+static1
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+1.declare variables rollno,name,section,branc,phoneno,address and print the details
+
+//declare variables rollno,name,section,branch,phoneno,address and print the details
+class Hello
+{
+    public static void main(String args[])
+    {
+        int rollno=123;
+        String name="bitLabs";
+        char section='A';
+         String branch="Mech";
+         long phoneno=784596123;
+         String address="Vijayawada";
+         System.out.println("name="+name+"\nrollno="+rollno+"\nsection="+section+"\nbranch="+branch+"\nphoneno="+phoneno+"\naddress="+address);
+         
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------
+
+//Declare two variables  name it as num1,num2 and display the output sum of two numbers
+class Hello
+{
+    public static void main(String args[])
+    {
+        int num1=10,num2=20;
+        int sum=num1+num2;
+        System.out.println("the sum of 2 numbers is"+sum);
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------
+WAP to find the simple Interest
+SI:pqr/100
+
+variables:
+sI
+p
+q
+r
+
+si=(p*q*r)/100;
+
+print the si
+
+------------------------------------------------------------------------------------------------------------------------------------
+import java.util.Scanner;
+class Hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int num1,num2;
+        System.out.println("Enter the num1");
+        num1=sc.nextInt();
+         System.out.println("Enter the num2");
+        num2=sc.nextInt();
+        int sum=num1+num2;
+        System.out.println("the sum of 2 numbers is"+sum);
+    }
+}
+
+/*nextInt()
+nextByte()
+nextShort()
+nextLong()
+nextFloat()
+nextDouble()
+nextBoolean()
+next().charAt(0);
+next()
+nextLine()*/
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Conditional control statements
+
+excutes the statements based on particular condition
+1.if statement
+2.if else statement
+3.else if lader
+4.nested if
+5.switch
+
+if statement:
+import java.util.Scanner;
+class Hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int num1,num2;
+        System.out.println("Enter the num1");
+        num1=sc.nextInt();
+         System.out.println("Enter the num2");
+        num2=sc.nextInt();
+        if(num1>num2)//12>34//false
+        {
+            System.out.println("num1 is big");
+        }
+        if(num2>num1)//34>12//True
+        {
+            System.out.println("num2 is big");
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------------------
+if else
+import java.util.Scanner;
+class Hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int num1,num2;
+        System.out.println("Enter the num1");
+        num1=sc.nextInt();
+         System.out.println("Enter the num2");
+        num2=sc.nextInt();
+        if(num1>num2)//12>34//false
+        {
+            System.out.println("num1 is big");
+        }
+       else
+       {
+           System.out.println("num2 is big");
+       }
+       
+    }
+}
+
+
+grade A,B,C,D,fail
+
+//WAP to find whether the person is eligible for vote or not
+import java.util.Scanner;
+class Hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter age");
+        int age=sc.nextInt();
+       if(age>=18)
+       {
+           System.out.println("eligible for Vote");
+       }
+       else
+       {
+           System.out.println("Not Eligble for Vote");
+       }
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------
+//WAP to find whether the person is eligible for blood donation or not
+//age,weight
+age>=18 && weight>=50
+
+import java.util.Scanner;
+class Hello
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int age,weight;
+        System.out.println("enter age");
+         age=sc.nextInt();
+        System.out.println("Enter weight");
+         weight=sc.nextInt();
+       if(age>=18&&weight>=50)
+       
+           System.out.println("eligible for blood donation");
+    
+       else
+       
+           System.out.println("Not Eligble ");
+       
+    }
+}
+
+
+//WAP to find the number  even or odd
+//number 
+number%2==0
+
+//WAP to find the number is divisible by the 5 or not
+number
+number%5==0
+
+----------------------------------------------------------------------------------------------------
+Day-2:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Write a JAVAprogram to find maximum between two numbers.
+2. Write a JAVAprogram to find maximum between three numbers.
+3. Write a JAVAprogram to check whether a number is negative, positive or zero.
+4. Write a JAVAprogram to check whether a number is divisible by 5 and 11 or not.
+5. Write a JAVAprogram to check whether a number is even or odd.
+6. Write a JAVAprogram to check whether a year is leap year or not.
+7. Write a JAVAprogram to check whether a character is alphabet or not.
+8. Write a JAVAprogram to input any alphabet and check whether it is vowel or    consonant.
+9. Write a JAVAprogram to input any character and check whether it is alphabet, digit    or special character.
+10. Write a JAVAprogram to check whether a character is uppercase or lowercase     alphabet.
+11. Write a JAVAprogram to input week number and print week day.
+12. Write a JAVAprogram to count total number of notes in given amount.
+13. Write a JAVAprogram to input marks of five subjects Physics, Chemistry, Biology,     Mathematics and Computer. Calculate percentage and grade according to     following:
+    Percentage >= 90% : Grade A
+    Percentage >= 80% : Grade B
+    Percentage >= 70% : Grade C
+    Percentage >= 60% : Grade D
+    Percentage >= 40% : Grade E
+    Percentage < 40% : Grade F
+14. Write a JAVAprogram to input basiJAVAsalary of an employee and calculate its Gross     salary according to following:
+    BasiJAVASalary <= 10000 : HRA = 20%, DA = 80%
+    BasiJAVASalary <= 20000 : HRA = 25%, DA = 90%
+    BasiJAVASalary > 20000 : HRA = 30%, DA = 95%
+15. Write a JAVAprogram to print day of week name using switch case.
+-----------------------------------------------------------------------------------------------------------------------
+17. Write a JAVAprogram to print all natural numbers from 1 to n. - using while loop
+18. Write a JAVAprogram to print all natural numbers in reverse (from n to 1). -     using while loop
+19. Write a JAVAprogram to print all alphabets from a to z. - using while loop
+20. Write a JAVAprogram to print all even numbers between 1 to 100. - using while     loop
+21. Write a JAVAprogram to print all odd number between 1 to 100.
+22. Write a JAVAprogram to find sum of all natural numbers between 1 to n.
+23. Write a JAVAprogram to find sum of all even numbers between 1 to n.
+24. Write a JAVAprogram to find sum of all odd numbers between 1 to n.
+25. Write a JAVAprogram to print multiplication table of any number.
+26. Write a JAVAprogram to count number of digits in a number.
+27. Write a JAVAprogram to find first and last digit of a number.
+28. Write a JAVAprogram to find sum of first and last digit of a number.
+29. Write a JAVAprogram to check whether a number is palindrome or not.
+30. Write a JAVAprogram to calculate sum of digits of a number.
+31. Write a JAVAprogram to calculate product of digits of a number.
+32. Write a JAVAprogram to enter a number and print its reverse.
+
+
